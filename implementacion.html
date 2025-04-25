@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementación - Perfilamiento FCP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Perfilamiento<span>FCP</span></a>
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="descripcion.html">Descripción</a></li>
+                    <li><a href="flujos.html">Flujos de Usuario</a></li>
+                    <li><a href="tecnologia.html">Stack Tecnológico</a></li>
+                    <li><a href="backend.html">Backend</a></li>
+                    <li><a href="implementacion.html" class="active">Implementación</a></li>
+                    <button id="theme-toggle" class="theme-toggle" title="Cambiar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in">Plan de Implementación</h1>
+                <p class="fade-in">Conoce las fases y actividades para la implementación del módulo "Perfilamiento FCP"</p>
+            </div>
+        </section>
+
+        <section class="implementation-plan">
+            <div class="container">
+                <div class="card fade-in">
+                    <h2>Visión General del Plan</h2>
+                    <p>Este plan de implementación de alto nivel describe las fases y actividades principales para el desarrollo del módulo "Perfilamiento FCP". El equipo de desarrollo deberá detallar y refinar estos pasos en tareas más granulares para la planificación de sprints.</p>
+                </div>
+
+                <div class="timeline fade-in">
+                    <div class="timeline-item">
+                        <div class="card">
+                            <h3>Fase 1: Infraestructura y Setup Inicial</h3>
+                            <ul>
+                                <li>Configuración de infraestructura base en Plexo.</li>
+                                <li>Setup inicial de repositorios y proyectos (Frontend/Backend).</li>
+                                <li>Definición de la arquitectura inicial y configuración básica.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="card">
+                            <h3>Fase 2: Diseño Frontend y Base de Datos</h3>
+                            <ul>
+                                <li>Adaptación del diseño Figma a componentes Angular.</li>
+                                <li>Desarrollo inicial de pantallas principales.</li>
+                                <li>Creación e implementación del esquema de base de datos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="card">
+                            <h3>Fase 3: Desarrollo e Integración Backend-Frontend</h3>
+                            <ul>
+                                <li>Desarrollo de lógica de negocio y casos de uso en Backend.</li>
+                                <li>Implementación de endpoints REST.</li>
+                                <li>Integración de servicios Backend con componentes Frontend.</li>
+                                <li>Desarrollo de funcionalidades core (ej. perfilamiento, consulta).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="card">
+                            <h3>Fase 4: CI/CD y Calidad (En Progreso)</h3>
+                            <ul>
+                                <li>Creación y configuración de pipelines de integración continua.</li>
+                                <li>Implementación de análisis de calidad (SonarQube).</li>
+                                <li>Configuración inicial de despliegue continuo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="card">
+                            <h3>Fase 5: Pruebas y Funcionalidades Adicionales</h3>
+                            <ul>
+                                <li>Implementación de funcionalidades restantes (observaciones, historial, PDF).</li>
+                                <li>Desarrollo de pruebas unitarias y de integración.</li>
+                                <li>Pruebas funcionales y de seguridad iniciales.</li>
+                                <li>Integración con Kit Capital.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="card">
+                            <h3>Fase 6: Despliegue y Estabilización</h3>
+                            <ul>
+                                <li>Pruebas en ambientes superiores (QA, UAT).</li>
+                                <li>Optimización y corrección de errores.</li>
+                                <li>Preparación para lanzamiento a producción y capacitación.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <h2>Consideraciones Clave</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h3><i class="fas fa-users"></i> Equipo</h3>
+                            <p>El equipo de desarrollo debe contar con experiencia en Angular, Spring Boot y arquitectura de microservicios.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-tasks"></i> Gestión de Proyecto</h3>
+                            <p>Se recomienda utilizar metodología ágil con sprints de 2 semanas y ceremonias Scrum.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-shield-alt"></i> Seguridad</h3>
+                            <p>Implementar revisiones de seguridad en cada fase del desarrollo para garantizar la protección de datos sensibles.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-code-branch"></i> Control de Versiones</h3>
+                            <p>Utilizar Git Trunk como estrategia de ramificación para gestionar el desarrollo y las versiones.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-vial"></i> Calidad</h3>
+                            <p>Mantener una cobertura de pruebas mínima del 80% y utilizar SonarQube para análisis estático de código.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-rocket"></i> Despliegue</h3>
+                            <p>Implementar CI/CD para automatizar el proceso de construcción, pruebas y despliegue en los diferentes ambientes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <h2>Riesgos y Mitigación</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Integración con APIs Externas</h3>
+                            <p><strong>Riesgo:</strong> Cambios en las APIs de Riesgos pueden afectar la funcionalidad.</p>
+                            <p><strong>Mitigación:</strong> Implementar adaptadores y mocks para pruebas, mantener comunicación constante con el equipo de APIs.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Rendimiento</h3>
+                            <p><strong>Riesgo:</strong> Tiempos de respuesta lentos en la generación de PDF o consultas.</p>
+                            <p><strong>Mitigación:</strong> Implementar caché, optimizar consultas y realizar pruebas de carga temprano.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Seguridad</h3>
+                            <p><strong>Riesgo:</strong> Vulnerabilidades de seguridad en la autenticación o manejo de datos.</p>
+                            <p><strong>Mitigación:</strong> Realizar revisiones de seguridad periódicas y seguir las mejores prácticas de OWASP.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Integración con Kit Capital</h3>
+                            <p><strong>Riesgo:</strong> Dificultades en la integración como microfrontend.</p>
+                            <p><strong>Mitigación:</strong> Realizar pruebas de integración tempranas y mantener comunicación con el equipo de Kit Capital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Perfilamiento FCP - Módulo Kit Capital</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

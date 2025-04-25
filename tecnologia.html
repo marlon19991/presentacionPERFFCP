@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Tecnológico - Perfilamiento FCP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Perfilamiento<span>FCP</span></a>
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="descripcion.html">Descripción</a></li>
+                    <li><a href="flujos.html">Flujos de Usuario</a></li>
+                    <li><a href="tecnologia.html" class="active">Stack Tecnológico</a></li>
+                    <li><a href="backend.html">Backend</a></li>
+                    <li><a href="implementacion.html">Implementación</a></li>
+                    <button id="theme-toggle" class="theme-toggle" title="Cambiar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in">Stack Tecnológico</h1>
+                <p class="fade-in">Explora las tecnologías utilizadas en el desarrollo del módulo "Perfilamiento FCP"</p>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <div class="container">
+                <div class="tabs fade-in">
+                    <button class="tab-btn active" data-tab="tab-frontend">Frontend</button>
+                    <button class="tab-btn" data-tab="tab-backend">Backend</button>
+                    <button class="tab-btn" data-tab="tab-infra">Infraestructura</button>
+                    <button class="tab-btn" data-tab="tab-apis">APIs Externas</button>
+                </div>
+
+                <div id="tab-frontend" class="tab-content active">
+                    <div class="card">
+                        <h2>Tecnologías Frontend</h2>
+                        <div class="card-grid">
+                            <div class="card interactive-element">
+                                <h3><i class="fab fa-angular"></i> Angular</h3>
+                                <p>Framework: Angular (~16.2.12)</p>
+                                <p>Lenguaje: TypeScript (~5.1.6)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-palette"></i> Diseño UI</h3>
+                                <p>Librería: @bancolombia/design-system-web (~11.10.0) (BDS/Galatea)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-puzzle-piece"></i> Gestión de Módulos</h3>
+                                <p>@angular-architects/module-federation (~16.0.4) (Webpack 5)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-lock"></i> Autenticación</h3>
+                                <p>@azure/msal-angular (~3.0.13)</p>
+                                <p>@azure/msal-browser (~3.10.0)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-stream"></i> Programación Reactiva</h3>
+                                <p>RxJS (~7.5.0)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-check-square"></i> Formularios</h3>
+                                <p>Angular Reactive Forms (@angular/forms)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-exchange-alt"></i> Peticiones HTTP</h3>
+                                <p>Angular HttpClientModule (@angular/common/http)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-vial"></i> Pruebas</h3>
+                                <p>Jest (~29.7.0), jest-preset-angular (~14.0.3)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-tools"></i> Build Tool</h3>
+                                <p>Angular CLI (~16.2.12), ngx-build-plus (~16.0.0)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-backend" class="tab-content">
+                    <div class="card">
+                        <h2>Tecnologías Backend ("Perfilamiento FCP")</h2>
+                        <div class="card-grid">
+                            <div class="card interactive-element">
+                                <h3><i class="fab fa-java"></i> Lenguaje</h3>
+                                <p>Java (JDK 11)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-leaf"></i> Framework</h3>
+                                <p>Spring Boot (2.7.6)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-shield-alt"></i> Seguridad</h3>
+                                <p>Spring Security (OAuth2 Resource Server)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-database"></i> Persistencia</h3>
+                                <p>Spring Data JPA (Hibernate)</p>
+                                <p>Base de Datos: PostgreSQL</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-server"></i> API</h3>
+                                <p>RESTful APIs (Spring Web MVC)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-cogs"></i> Build Tool</h3>
+                                <p>Gradle (7.4.2)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-tools"></i> Utilidades</h3>
+                                <p>Lombok (~1.18.24), MapStruct</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-vial"></i> Pruebas</h3>
+                                <p>JUnit 5, Mockito, AssertJ, Spring Test, JaCoCo (0.8.8)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-infra" class="tab-content">
+                    <div class="card">
+                        <h2>Infraestructura y Despliegue</h2>
+                        <div class="card-grid">
+                            <div class="card interactive-element">
+                                <h3><i class="fab fa-aws"></i> Plataforma Cloud</h3>
+                                <p>Amazon Web Services (AWS)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-dharmachakra"></i> Orquestación de Contenedores</h3>
+                                <p>Amazon Elastic Kubernetes Service (EKS)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-globe"></i> Red de Distribución</h3>
+                                <p>Cloudfront Web Distribution</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-rocket"></i> Plataforma de Despliegue</h3>
+                                <p>Plexo (Bancolombia)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-code-branch"></i> Repositorio y CI/CD</h3>
+                                <p>Azure DevOps (Git, Azure Pipelines)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-search"></i> Análisis de Calidad</h3>
+                                <p>SonarQube</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-box"></i> Registro de Contenedores</h3>
+                                <p>Artifactory o Azure Container Registry (ACR)</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-archive"></i> Gestión de Artefactos</h3>
+                                <p>Artifactory</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-apis" class="tab-content">
+                    <div class="card">
+                        <h2>APIs Externas</h2>
+                        <p>El backend "Perfilamiento FCP" consume las siguientes APIs externas para obtener información necesaria para el proceso de perfilamiento:</p>
+                        <div class="card-grid">
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-user"></i> API de Riesgos (Cliente)</h3>
+                                <p>Proporciona información del cliente y su perfil de riesgo actual.</p>
+                            </div>
+                            <div class="card interactive-element">
+                                <h3><i class="fas fa-chart-line"></i> API de Riesgos (Producto)</h3>
+                                <p>Proporciona información de los productos FCP y su perfil de riesgo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <h2>Arquitectura Tecnológica</h2>
+                    <div class="diagram">
+                        <svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Frontend -->
+                            <rect x="50" y="50" width="200" height="100" rx="10" fill="var(--primary-color)" />
+                            <text x="150" y="100" text-anchor="middle" fill="var(--secondary-color)" font-weight="bold">Frontend Angular</text>
+                            <text x="150" y="120" text-anchor="middle" fill="var(--secondary-color)" font-size="12">Microfrontend en Kit Capital</text>
+                            
+                            <!-- Backend -->
+                            <rect x="300" y="50" width="200" height="100" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                            <text x="400" y="100" text-anchor="middle" fill="var(--text-color)" font-weight="bold">Backend Java/Spring</text>
+                            <text x="400" y="120" text-anchor="middle" fill="var(--text-color)" font-size="12">"Perfilamiento FCP"</text>
+                            
+                            <!-- Base de Datos -->
+                            <rect x="550" y="50" width="200" height="100" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                            <text x="650" y="100" text-anchor="middle" fill="var(--text-color)" font-weight="bold">PostgreSQL</text>
+                            <text x="650" y="120" text-anchor="middle" fill="var(--text-color)" font-size="12">Base de Datos</text>
+                            
+                            <!-- APIs Externas -->
+                            <rect x="300" y="200" width="200" height="100" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                            <text x="400" y="250" text-anchor="middle" fill="var(--text-color)" font-weight="bold">APIs de Riesgos</text>
+                            <text x="400" y="270" text-anchor="middle" fill="var(--text-color)" font-size="12">Cliente y Producto</text>
+                            
+                            <!-- Infraestructura -->
+                            <rect x="300" y="350" width="200" height="100" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                            <text x="400" y="400" text-anchor="middle" fill="var(--text-color)" font-weight="bold">AWS/EKS</text>
+                            <text x="400" y="420" text-anchor="middle" fill="var(--text-color)" font-size="12">Infraestructura Cloud</text>
+                            
+                            <!-- Conexiones -->
+                            <path d="M250 100 L300 100" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            <path d="M500 100 L550 100" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            <path d="M400 150 L400 200" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            <path d="M400 300 L400 350" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            
+                            <!-- Definición de marcador de flecha -->
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="var(--primary-color)" />
+                                </marker>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Perfilamiento FCP - Módulo Kit Capital</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

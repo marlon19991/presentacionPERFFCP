@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujos de Usuario - Perfilamiento FCP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Perfilamiento<span>FCP</span></a>
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="descripcion.html">Descripción</a></li>
+                    <li><a href="flujos.html" class="active">Flujos de Usuario</a></li>
+                    <li><a href="tecnologia.html">Stack Tecnológico</a></li>
+                    <li><a href="backend.html">Backend</a></li>
+                    <li><a href="implementacion.html">Implementación</a></li>
+                    <button id="theme-toggle" class="theme-toggle" title="Cambiar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in">Flujos de Usuario</h1>
+                <p class="fade-in">Explora el recorrido del usuario a través del módulo "Perfilamiento FCP"</p>
+            </div>
+        </section>
+
+        <section class="user-flow">
+            <div class="container">
+                <div class="card fade-in">
+                    <h2>Flujo Principal del Asesor</h2>
+                    <p>El flujo principal del asesor dentro del módulo "Perfilamiento FCP" está diseñado para guiar el proceso de perfilamiento de conveniencia de productos FCP para los clientes de manera eficiente y precisa.</p>
+                </div>
+
+                <div class="interactive-diagram fade-in">
+                    <div class="diagram">
+                        <svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Nodos del diagrama -->
+                            <g class="diagram-element" data-target="info-consulta">
+                                <rect x="50" y="50" width="150" height="80" rx="10" fill="var(--primary-color)" />
+                                <text x="125" y="90" text-anchor="middle" fill="var(--secondary-color)" font-weight="bold">Consulta del Cliente</text>
+                            </g>
+                            
+                            <g class="diagram-element" data-target="info-perfilamiento">
+                                <rect x="50" y="200" width="150" height="80" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                                <text x="125" y="240" text-anchor="middle" fill="var(--text-color)" font-weight="bold">Perfilamiento del Cliente</text>
+                            </g>
+                            
+                            <g class="diagram-element" data-target="info-seleccion">
+                                <rect x="300" y="200" width="150" height="80" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                                <text x="375" y="240" text-anchor="middle" fill="var(--text-color)" font-weight="bold">Selección de FCP</text>
+                            </g>
+                            
+                            <g class="diagram-element" data-target="info-analisis">
+                                <rect x="550" y="200" width="150" height="80" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                                <text x="625" y="240" text-anchor="middle" fill="var(--text-color)" font-weight="bold">Análisis de Conveniencia</text>
+                            </g>
+                            
+                            <g class="diagram-element" data-target="info-resultado">
+                                <rect x="550" y="350" width="150" height="80" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                                <text x="625" y="390" text-anchor="middle" fill="var(--text-color)" font-weight="bold">Resultado de Validación</text>
+                            </g>
+                            
+                            <g class="diagram-element" data-target="info-observaciones">
+                                <rect x="300" y="350" width="150" height="80" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                                <text x="375" y="390" text-anchor="middle" fill="var(--text-color)" font-weight="bold">Observaciones y Propuesta</text>
+                            </g>
+                            
+                            <g class="diagram-element" data-target="info-pdf">
+                                <rect x="50" y="350" width="150" height="80" rx="10" fill="var(--card-bg)" stroke="var(--primary-color)" stroke-width="2" />
+                                <text x="125" y="390" text-anchor="middle" fill="var(--text-color)" font-weight="bold">Generación de PDF</text>
+                            </g>
+                            
+                            <!-- Flechas de conexión -->
+                            <path d="M125 130 L125 200" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            <path d="M200 240 L300 240" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            <path d="M450 240 L550 240" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            <path d="M625 280 L625 350" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            <path d="M550 390 L450 390" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            <path d="M300 390 L200 390" stroke="var(--primary-color)" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                            
+                            <!-- Definición de marcador de flecha -->
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="var(--primary-color)" />
+                                </marker>
+                            </defs>
+                        </svg>
+                    </div>
+                    
+                    <!-- Información detallada de cada paso -->
+                    <div id="info-consulta" class="diagram-info card active">
+                        <h3>1. Consulta del Cliente</h3>
+                        <p>El asesor busca al cliente por tipo y número de documento, reutilizando la consulta existente de PRAC. Esta consulta permite obtener los datos básicos del cliente y su perfil de riesgo actual desde la API de Riesgos correspondiente.</p>
+                    </div>
+                    
+                    <div id="info-perfilamiento" class="diagram-info card">
+                        <h3>2. Perfilamiento del Cliente</h3>
+                        <p>Si es necesario, el asesor utiliza la encuesta de perfilamiento (reutilizando la encuesta existente de PRAC) para determinar o confirmar el perfil de riesgo del cliente. Este paso es crucial para asegurar que el perfil del cliente esté actualizado antes de realizar el análisis de conveniencia.</p>
+                    </div>
+                    
+                    <div id="info-seleccion" class="diagram-info card">
+                        <h3>3. Selección de FCP</h3>
+                        <p>El asesor consulta la lista de productos FCP disponibles (reutilizando la consulta de productos existente de PRAC) y selecciona un único FCP para realizar el análisis. Esta selección se realiza probablemente mediante un componente de tabla con radio buttons o una selección similar.</p>
+                    </div>
+                    
+                    <div id="info-analisis" class="diagram-info card">
+                        <h3>4. Análisis de Conveniencia FCP</h3>
+                        <p>El backend "Perfilamiento FCP" realiza el cotejo del perfil de riesgo del cliente con el perfil de riesgo del FCP seleccionado, aplicando la lógica de negocio definida en la tabla de comparación (Conservador vs Conservador = OK, etc.).</p>
+                    </div>
+                    
+                    <div id="info-resultado" class="diagram-info card">
+                        <h3>5. Resultado de Validación</h3>
+                        <p>El sistema muestra el resultado del análisis: "OK" o "Por fuera de perfil". Este resultado se presenta al asesor en una pantalla de resultados del análisis, posiblemente utilizando una tabla similar a la vista en los ejemplos de diseño.</p>
+                    </div>
+                    
+                    <div id="info-observaciones" class="diagram-info card">
+                        <h3>6. Observaciones y Propuesta</h3>
+                        <p>El asesor ingresa sus observaciones comerciales en un campo de texto (componente &lt;bc-textarea&gt;). Si el resultado es "Por fuera de perfil", se gestionan los mecanismos necesarios para la autorización del cliente, como mostrar un mensaje indicando la necesidad de autorización y potencialmente un botón para adjuntar la Carta de Indemnidad.</p>
+                    </div>
+                    
+                    <div id="info-pdf" class="diagram-info card">
+                        <h3>7. Generación de PDF</h3>
+                        <p>Se genera un documento PDF que incluye el guion comercial estándar para FCPs y las observaciones específicas ingresadas por el asesor comercial. El backend "Perfilamiento FCP" genera este PDF utilizando una plantilla HTML almacenada, combinándola con el guion comercial y las observaciones guardadas.</p>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <h2>Flujo Específico del Módulo</h2>
+                    <p>El asesor, tras autenticarse en Kit Capital usando MSAL, navega al módulo "Perfilamiento FCP". La primera pantalla le permite consultar un cliente ingresando su tipo y número de documento. Esta consulta reutiliza la funcionalidad existente de PRAC para obtener los datos básicos del cliente y su perfil de riesgo actual desde la API de Riesgos correspondiente.</p>
+                    <p>Si el cliente necesita ser perfilado o su perfil requiere actualización, el asesor es dirigido al flujo de la encuesta de perfilamiento existente en PRAC. Una vez obtenido el perfil de riesgo del cliente, el asesor regresa al módulo "Perfilamiento FCP".</p>
+                    <p>A continuación, se presenta una pantalla donde el asesor puede consultar la lista de Fondos de Capital Privado (FCP) disponibles. Esta consulta reutiliza la funcionalidad existente de PRAC para obtener la lista de productos desde la API de Riesgos correspondiente. De esta lista, el asesor selecciona un único FCP que desea analizar para el cliente.</p>
+                    <p>Con el cliente y el FCP seleccionado, el frontend invoca al backend "Perfilamiento FCP". Este backend aplica la lógica de negocio definida en la tabla de comparación. El resultado ("OK" o "Por fuera de perfil") se devuelve al frontend y se muestra al asesor en una pantalla de resultados del análisis.</p>
+                    <p>En esta pantalla de resultados, el asesor tiene un campo de texto para ingresar sus "Observaciones del comercial". Si el resultado fue "Por fuera de perfil", se activarán los mecanismos necesarios para gestionar la autorización del cliente. Finalmente, el asesor puede solicitar la generación de un documento PDF. El sistema también registrará este análisis en un historial consultable.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Perfilamiento FCP - Módulo Kit Capital</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

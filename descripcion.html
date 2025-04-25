@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción - Perfilamiento FCP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Perfilamiento<span>FCP</span></a>
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="descripcion.html" class="active">Descripción</a></li>
+                    <li><a href="flujos.html">Flujos de Usuario</a></li>
+                    <li><a href="tecnologia.html">Stack Tecnológico</a></li>
+                    <li><a href="backend.html">Backend</a></li>
+                    <li><a href="implementacion.html">Implementación</a></li>
+                    <button id="theme-toggle" class="theme-toggle" title="Cambiar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in">Descripción General del Proyecto</h1>
+                <p class="fade-in">Conoce en detalle el módulo "Perfilamiento FCP" y su propósito dentro de Kit Capital</p>
+            </div>
+        </section>
+
+        <section class="project-description">
+            <div class="container">
+                <div class="card fade-in">
+                    <h2>Descripción General de la Aplicación</h2>
+                    <p>El Módulo "Perfilamiento FCP" es una aplicación web frontend (Angular) que se integra como microfrontend dentro de la plataforma Kit Capital de Bancolombia. Su objetivo es proporcionar a los asesores de Fondos de Capital Privado (FCP) de PRAC una herramienta específica para realizar el perfilamiento de conveniencia de estos productos para sus clientes.</p>
+                    <p>El módulo implementa su propia lógica de perfilamiento en un backend dedicado ("Perfilamiento FCP" - Java/SpringBoot), utilizando información de clientes y productos obtenida de APIs de Riesgos, y siguiendo reglas de negocio específicas para FCPs. Se integra visualmente con Kit Capital utilizando el BDS y busca mejorar la eficiencia y precisión del proceso de asesoría FCP.</p>
+                </div>
+
+                <div class="tabs fade-in">
+                    <button class="tab-btn active" data-tab="tab-scope">Alcance</button>
+                    <button class="tab-btn" data-tab="tab-out-scope">Fuera de Alcance</button>
+                </div>
+
+                <div id="tab-scope" class="tab-content active">
+                    <div class="card">
+                        <h3>Dentro del Alcance (In-scope)</h3>
+                        <ul>
+                            <li>Desarrollo completo del módulo "Perfilamiento FCP", incluyendo frontend y el nuevo backend "Perfilamiento FCP".</li>
+                            <li>Implementación de la lógica de perfilamiento FCP específica.</li>
+                            <li>Integración del módulo dentro de la plataforma Kit Capital como microfrontend.</li>
+                            <li>Consumo de las APIs de Riesgos especificadas.</li>
+                            <li>Generación del PDF con guion comercial y observaciones.</li>
+                            <li>Pruebas unitarias (Jest/JUnit5), de integración y end-to-end.</li>
+                            <li>Documentación técnica y de usuario.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tab-out-scope" class="tab-content">
+                    <div class="card">
+                        <h3>Fuera del Alcance (Out-of-scope)</h3>
+                        <ul>
+                            <li>Modificaciones a las APIs de Riesgos (se consumirán tal como existen).</li>
+                            <li>Modificaciones al flujo de encuesta de perfilamiento de PRAC (se reutilizará).</li>
+                            <li>Funcionalidades avanzadas de gestión de portafolio (simulación, edición detallada).</li>
+                            <li>Integración con otros módulos de Kit Capital más allá de la autenticación y el menú.</li>
+                            <li>Soporte para otros tipos de productos de inversión fuera de FCPs.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <h2>Funcionalidades Principales</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h3><i class="fas fa-check-circle"></i> Lógica de Perfilamiento</h3>
+                            <p>Implementación de la lógica de perfilamiento FCP en el backend "Perfilamiento FCP".</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-balance-scale"></i> Validación de Perfiles</h3>
+                            <p>Validación de perfil de riesgo cliente vs. perfil de fondo FCP según la matriz definida (OK / Por fuera de perfil).</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-database"></i> Consulta de Información</h3>
+                            <p>Consulta de información de clientes y productos FCP a través de APIs de Riesgos.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-hand-pointer"></i> Selección de FCP</h3>
+                            <p>Selección de un único FCP para el análisis de conveniencia.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-comment-alt"></i> Observaciones</h3>
+                            <p>Registro de observaciones del asesor comercial durante el proceso.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-file-pdf"></i> Generación de PDF</h3>
+                            <p>Generación de PDF con guion comercial y observaciones del asesor.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-sync-alt"></i> Integración</h3>
+                            <p>Integración con el flujo de encuesta de perfilamiento existente en PRAC.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-key"></i> Autorización</h3>
+                            <p>Gestión de autorización para inversiones "Por fuera de perfil".</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-history"></i> Historial</h3>
+                            <p>Historial de análisis realizados para seguimiento y auditoría.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Perfilamiento FCP - Módulo Kit Capital</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
